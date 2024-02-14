@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Young Serif';
+    src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+    /* Añade más src si tienes diferentes formatos de archivo */
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Outfit';
+    src: url('assets/fonts/outfit/static/Outfit-Regular.ttf') format('truetype');
+    /* Añade más src si tienes diferentes formatos de archivo */
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Outfit';
+    src: url('assets/fonts/outfit/static/Outfit-SemiBold.ttf') format('truetype');
+    /* Añade más src si tienes diferentes formatos de archivo */
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Outfit';
+    src: url('assets/fonts/outfit/static/Outfit-Bold.ttf') format('truetype');
+    /* Añade más src si tienes diferentes formatos de archivo */
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root{
+    /* Fuentes */
+    --fuenteTitulos:"Young Serif", serif;
+    --fuenteTexto:"Outfit", sans-serif;
+
+    /* Colores */
+    /* ### Primary */
+
+    --nutmeg: hsl(14, 45%, 36%);
+    --darkRaspberry: hsl(332, 51%, 32%);
+    --white: hsl(0, 0%, 100%);
+    --roseWhite: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --lightGrey: hsl(30, 18%, 87%);
+    --wengeBrown: hsl(30, 10%, 34%);
+    --darkCharcoal: hsl(24, 5%, 18%);
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::after,*::before{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: var(--eggshell);
+    display: grid;
+    place-items: center;
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+@media (min-width: 768px) {
+    body{ 
+        padding: 12.4rem;
+    }
+   
+}
+h1,h2{
+    font-family: "Young Serif", serif;
+}
+h1{
+   font-size: 3.5rem;
+   line-height: 1;
+   letter-spacing: .05rem;
+}
+img{
+    display: block;
+    width: 100%;
+}
+@media (min-width: 768px) {
+    img{ 
+        border-radius: 1rem;
+    }
+    .image{
+        padding: 4rem;
+        border-radius: 1rem;
+    }
+   
+}
+.container{
+    background-color: var(--white);
+    width: min(100%,73.6rem);
+    display: grid;
+    place-items: center;
+    border-radius: 2rem;
+}
+
+.contenido{
+  padding: 2rem 3rem; 
+}
+@media (min-width: 768px) {
+    .contenido{
+        padding: 0; 
+      }
+}
+p{
+    color: var(--wengeBrown);
+}
